@@ -13,7 +13,9 @@ var version = 'v1::';
 */
 var offlineFundamentals = [
     '/index.html',
-    '/framework.css',
+    '/ideas.html',
+    '/about.html',
+    'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/grave.min.css',
     '/assets/icons/180/icon_square_logo.png',
     '/assets/favicon-16x16.ico',
     '/assets/favicon-32x32.ico',

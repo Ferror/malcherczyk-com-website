@@ -4,35 +4,19 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
 >
     <url>
-        <loc>https://malcherczyk.pl/</loc>
+        <loc>https://malcherczyk.com/</loc>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://malcherczyk.pl/projects</loc>
+        <loc>https://malcherczyk.com/about</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://malcherczyk.pl/about</loc>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://malcherczyk.pl/lego</loc>
+        <loc>https://malcherczyk.com/ideas</loc>
         <priority>0.80</priority>
     </url>
     <url>
-        <loc>https://malcherczyk.pl/books</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://malcherczyk.pl/raspberry</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://malcherczyk.pl/development</loc>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://malcherczyk.pl/blog</loc>
+        <loc>https://malcherczyk.com/utopia</loc>
         <priority>0.80</priority>
     </url>
 </urlset>
