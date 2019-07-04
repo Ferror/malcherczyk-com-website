@@ -16,9 +16,9 @@ var offlineFundamentals = [
     '/ideas.html',
     '/about.html',
     'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/grave.min.css',
-    '/assets/icons/180/icon_square_logo.png',
-    '/assets/favicon-16x16.ico',
-    '/assets/favicon-32x32.ico',
+    'https://assets.malcherczyk.com/icons/180/icon_square_logo.png',
+    'https://assets.malcherczyk.com/favicon/favicon-16x16.ico',
+    'https://assets.malcherczyk.com/favicon/favicon-32x32.ico',
 ];
 
 /* The install event fires when the service worker is first installed.
