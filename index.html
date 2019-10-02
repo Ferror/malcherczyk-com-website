@@ -8,7 +8,7 @@
         <meta name="keywords" content="">
         <meta name="author" content="Zbigniew Malcherczyk">
         <title>MZA</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/grave-2.1.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.0/grave.min.css">
         <link rel="icon" sizes="32x32" href="https://assets.malcherczyk.com/favicon/favicon-32x32.ico">
         <link rel="icon" sizes="16x16" href="https://assets.malcherczyk.com/favicon/favicon-16x16.ico">
         <link rel="apple-touch-icon" sizes="180x180" href="https://assets.malcherczyk.com/icons/180/icon_square_logo.png">
@@ -51,12 +51,12 @@
             <temple>
                 <column>
                     <article>
+                        <header>
+                            <h3>Projects</h3>
+                        </header>
                         <figure>
                             <img src="https://assets.malcherczyk.com/icons/512/icon_round_projects.svg" alt="Project's figure">
                         </figure>
-                        <header>
-                            <h3>Product ideas</h3>
-                        </header>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec sollicitudin arcu. Mauris semper ut est vitae mattis. Phasellus hendrerit cursus libero, ut lobortis orci pretium sit amet. Integer finibus, justo accumsan sagittis fermentum, magna ex pretium turpis, id imperdiet orci ligula sed quam. In vulputate, libero non suscipit aliquet, purus est aliquet risus, nec scelerisque nisl
                         </p>
@@ -64,12 +64,12 @@
                 </column>
                 <column>
                     <article>
+                        <header>
+                            <h3>Projects</h3>
+                        </header>
                         <figure>
                             <img src="https://assets.malcherczyk.com/icons/512/icon_round_projects.svg" alt="Project's figure">
                         </figure>
-                        <header>
-                            <h3>Utopian world</h3>
-                        </header>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec sollicitudin arcu. Mauris semper ut est vitae mattis. Phasellus hendrerit cursus libero, ut lobortis orci pretium sit amet. Integer finibus, justo accumsan sagittis fermentum, magna ex pretium turpis, id imperdiet orci ligula sed quam. In vulputate, libero non suscipit aliquet, purus est aliquet risus, nec scelerisque nisl
                         </p>
@@ -100,6 +100,7 @@
         </footer>
 
         <script>
+            /*
             (function () {
                 if ('serviceWorker' in navigator) {
                     window.addEventListener('load', function() {
@@ -114,10 +115,25 @@
                     console.log('CLIENT: service worker is not supported.');
                 }
             })();
+            */
             (function () {
                 document.querySelector('input[type=email]').addEventListener('keyup', function () {
                     document.querySelector('input[type=submit]').disabled = document.querySelector('input[type=email]').value.length <= 0;
                 })
+            })();
+            (function () {
+                let darkModeUrl = 'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.0/grave-dark.min.css';
+                let lightModeUrl = 'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.0/grave.min.css';
+
+                document.querySelector('body').addEventListener('dblclick', function() {
+                    let link = document.querySelector('link');
+
+                    if (link.href === darkModeUrl) {
+                        link.href = lightModeUrl;
+                    } else {
+                        link.href = darkModeUrl;
+                    }
+                });
             })();
         </script>
     </body>
