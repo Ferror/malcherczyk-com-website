@@ -1,19 +1,17 @@
-/*
-    (function () {
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', function() {
-                console.log('CLIENT: service worker registration in progress.');
-                navigator.serviceWorker.register('service-worker.js').then(function() {
-                    console.log('CLIENT: service worker registration complete.');
-                }, function() {
-                    console.log('CLIENT: service worker registration failure.');
-                });
+(function () {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            console.log('CLIENT: service worker registration in progress.');
+            navigator.serviceWorker.register('service-worker.js').then(function() {
+                console.log('CLIENT: service worker registration complete.');
+            }, function() {
+                console.log('CLIENT: service worker registration failure.');
             });
-        } else {
-            console.log('CLIENT: service worker is not supported.');
-        }
-    })();
-*/
+        });
+    } else {
+        console.log('CLIENT: service worker is not supported.');
+    }
+})();
 (function () {
     let emailInput = document.querySelector('input[type=email]');
 
