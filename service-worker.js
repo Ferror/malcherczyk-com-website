@@ -15,7 +15,7 @@ let offlineFundamentals = [
     '/index.html',
     '/ideas.html',
     '/about.html',
-    'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.1/grave.min.css',
+    'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.3/grave.min.css',
     'https://assets.malcherczyk.com/icons/180/icon_square_logo.png',
     'https://assets.malcherczyk.com/logo/logo.svg',
     'https://assets.malcherczyk.com/icons/512/icon_round_projects.svg',
