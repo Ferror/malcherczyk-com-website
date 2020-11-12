@@ -20,15 +20,17 @@
 })();
 (function () {
     let darkModeUrl = 'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.3/grave-dark.min.css';
-    let lightModeUrl = 'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.3/grave.min.css';
+    let lightModeUrl = 'https://cdn.jsdelivr.net/gh/ferror/grave@gh-pages/3.3/grave-light.min.css';
 
     document.querySelector('body').addEventListener('dblclick', function() {
-        let link = document.querySelector('link');
+        let links = document.querySelectorAll('link[rel=stylesheet]');
 
-        if (link.href === darkModeUrl) {
-            link.href = lightModeUrl;
-        } else {
-            link.href = darkModeUrl;
-        }
+        links.forEach(function (link) {
+            if (link.href === darkModeUrl) {
+                link.href = lightModeUrl;
+            } else {
+                link.href = darkModeUrl;
+            }
+        });
     });
 })();
